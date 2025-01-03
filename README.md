@@ -1,1 +1,1 @@
-hello : https://github.com/itsMhido/sandwich-sprint/index.html
+hello : https://itsmhido.github.io/sandwich-sprint/

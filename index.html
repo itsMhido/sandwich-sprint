@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+
+    <div class="sliding-container"></div>
+
+    <!--player sprite section-->
+    <div class = "player" id = "player">
+        <img src = "sprites/idle-0.png">
+    </div>
+
+    <!-- the burger display section -->
+    <div class="burger-display" id  ="burger-display">
+        <h2>Your Burger:</h2>
+        <div id="burgerView" class="burger">
+        </div>
+    </div>
+
+    <div class="counter hidden"id = "counter"> 3 </div>
+
+    <!-- the game menu section -->
+    <div class="menu open" id="menu">
+        <div class = "logo"><img src = "images/logo2.png"></div>
+        <button class = "button" id = "start" onclick="gameManager()">start</button>
+        <button class = "button" id = "catalog">achievements</button>
+        <button class = "button" onclick = "switchTheme()">flash light button</button>
+        <button class="toggle-btn" id="toggleBtn" onclick = "pauseManager(3000)">
+          <span>→</span>
+        </button>
+    </div>
+
+    <!-- the achievements section -->
+    <div class="big-block hidden" id = "big-block">
+        
+        <!-- Add more mini blocks as needed -->
+    </div>
+    <script src = 'scripts/soundEffects.js'></script>
+    <script src = "scripts/variables.js"></script>  
+    <script src = "scripts/UIScripts.js"></script>
+    <script src = "scripts/gameManagement.js"></script>    
+    <script src="scripts/script.js"></script>
+    <script src="scripts/achievementManagement.js"></script>
+    <script src="scripts/achievements.js"></script>
+    <script src = "scripts/animation.js"></script>
+</body>
+</html>

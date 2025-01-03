@@ -1,10 +1,10 @@
-let blocks = []; // Store all blocks
-const gravity = 0.6; // Default gravity strength 0.6
-const ingredientGravity = 0.2; // Gravity for ingredient blocks
-const friction = 0.9; // Friction for slowing down 0.9
-const bounce = 0.7; // Bounce effect 0.7
-const moveSpeed = 2; // Horizontal acceleration 2
-const jumpForce = -15; // Force of the jump 15
+let blocks = []; 
+const gravity = 0.6; 
+const ingredientGravity = 0.2; 
+const friction = 0.9;
+const bounce = 0.7; 
+const moveSpeed = 2; 
+const jumpForce = -15; 
 let stack = ["bun-bottom"];
 let dropped = 0
 let moved = false
@@ -25,7 +25,7 @@ let cooldown = 0;
 let maxCooldown = 1000;
 let currentThemeNumber = 0;
 
-let currentWindow = "game" // game, catalog, achievements
+let currentWindow = "game" // game, achievements
 let imgPath = "images/block.jpg"
 
 

@@ -1,15 +1,15 @@
 function openMainMenu() {
-  menu.classList.remove('open'); // Close the menu
-  toggleBtn.classList.remove('menu-open'); // Update the toggle button state
-  arrow.textContent = '→'; // Reset the arrow
+  menu.classList.remove('open');
+  toggleBtn.classList.remove('menu-open');
+  arrow.textContent = '→';
 }
 
 function closeMainMenu() {
    // document.getElementById('start-menu').classList.add('hidden');
     //startGame()
-    menu.classList.remove('open'); // Close the menu
-    toggleBtn.classList.remove('menu-open'); // Update the toggle button state
-    arrow.textContent = '→'; // Reset the arrow
+    menu.classList.remove('open');
+    toggleBtn.classList.remove('menu-open'); 
+    arrow.textContent = '→'; 
   
 }
 
@@ -54,15 +54,15 @@ document.addEventListener('keydown', function(event) {
       //wait(setCooldown, maxCooldown)
       const isOpen = menu.classList.contains('open');
       if (isOpen) {
-        menu.classList.remove('open'); // Close the menu
-        toggleBtn.classList.remove('menu-open'); // Update the toggle button state
-        arrow.textContent = '→'; // Reset the arrow
+        menu.classList.remove('open'); 
+        toggleBtn.classList.remove('menu-open'); 
+        arrow.textContent = '→'; 
         pauseManager(3000)
       }
       else {
-        menu.classList.add('open'); // Close the menu
-        toggleBtn.classList.add('menu-open'); // Update the toggle button state
-        arrow.textContent = '←'; // Reset the arrow
+        menu.classList.add('open');
+        toggleBtn.classList.add('menu-open'); 
+        arrow.textContent = '←'; 
         pauseManager(3000)
       }
     }

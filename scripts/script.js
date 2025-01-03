@@ -1,5 +1,4 @@
 
-// Create a block
 function createBlock(id, x, y, color, isDynamic = true, isIngredient = false, ingredientType = "draggable-block") {
     const block = document.createElement('div');
     block.id = id;

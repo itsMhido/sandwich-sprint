@@ -169,4 +169,4 @@ setInterval(() => {
     } else {
         stopSound()
     }
-  }, 100); // Check every 100ms
+  }, 100);

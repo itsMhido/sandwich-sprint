@@ -113,31 +113,21 @@ function unPauseGame(time = 0) {
     let n = parseInt(time/1000);
     let counter = 0;
     countdown.textContent = `${n}`;
-
-  // Perform the action every second for n-1 seconds
     intervalId = setInterval(() => {
-
             counter++;
-            countdown.textContent = `${n - counter}`; // Replace this with your action
-
+            countdown.textContent = `${n - counter}`;
     if (counter === n - 1) {
-
         clearInterval(intervalId); 
-        
-        //clearInterval(intervalId); // Stop the interval on the n-1th second
-
-      // Perform final action on nth second
         const unpause = setTimeout(() => {
                 if (gamePaused == 0) {
                     startPhysics();
-                    startBlockSpawn(); // Replace with your final action
+                    startBlockSpawn(); 
                     gamePaused = -1
                     countdown.classList.add('hidden')
                 }
-
-        }, 1000); // Wait for the final second to pass
+        }, 1000); 
         }
-    }, 1000); // Set the interval to 1 second
+    }, 1000); 
 }
 
 setInterval( () => {

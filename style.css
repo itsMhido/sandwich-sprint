@@ -37,9 +37,9 @@ body {
 .player img{
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensures the image scales without distortion */
+  object-fit: contain; 
   display: block;
-  image-rendering: pixelated; /* Makes the image sharp */
+  image-rendering: pixelated; 
   image-rendering: crisp-edges;
 }
 
@@ -55,12 +55,12 @@ body {
     border-radius: 50%;
     border: 10px solid;
     border-color: var(--color2);
-    display: flex; /* Enables flexbox inside the circle */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    color: var(--fontColor2); /* Text color */
-    font-size: 18px; /* Adjust font size */
-    font-family: Arial, sans-serif; /* Optional: specify font */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: var(--fontColor2);
+    font-size: 18px; 
+    font-family: Arial, sans-serif;
     z-index: 9;
     font-weight: bold;
     font-size: 110px;
@@ -69,7 +69,7 @@ body {
 .menu {
     position: fixed;
     top: 0;
-    left: -100%; /* Sticks out slightly */
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: var(--color2);
@@ -79,7 +79,7 @@ body {
     justify-content: space-around;
     transition: left 0.5s ease;
     z-index: 10;
-    border-right: 5px solid var(--color4); /* Visible border */
+    border-right: 5px solid var(--color4);
     border-radius: 0 60px 60px 0;
   }
 
@@ -99,9 +99,9 @@ body {
   margin: auto;
   width: 30%;
   height: 30%;
-  object-fit: contain; /* Ensures the image scales without distortion */
+  object-fit: contain;
   display: block;
-  image-rendering: pixelated; /* Makes the image sharp */
+  image-rendering: pixelated; 
   image-rendering: crisp-edges;
   animation: oscillate 2s ease-in-out infinite;
 }
@@ -111,10 +111,10 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(20px); /* Move to the right */
+    transform: translateY(20px);
   }
   100% {
-    transform: translateY(0); /* Return to the original position */
+    transform: translateY(0); 
   }
 }
 
@@ -134,16 +134,16 @@ body {
 }
 
 .toggle-btn {
-    position: absolute; /* Positioned relative to the menu */
+    position: absolute; 
     top: 20%;
-    right: -50px; /* Sticks out from the menu */
+    right: -50px; 
     transform: translateY(-50%);
     width: 100px;
     height: 100px;
     background-color: var(--color2);
     color: var(--fontColor1);
-    border: 5px solid var(--color4); /* Matches menu border */
-    border-radius: 50px; /* Half-circle shape */
+    border: 5px solid var(--color4); 
+    border-radius: 50px; 
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -258,7 +258,6 @@ body {
     border-radius: 3px;
 }
 
-/* Styling for the big block */
 .big-block {
     overflow: auto;
     width: 1000px;
@@ -276,7 +275,7 @@ body {
   }
   
   .big-block::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar */
+    display: none; 
   }
   
   .mini-block {
@@ -307,7 +306,7 @@ body {
     background-color: var(--color0);
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Ensures elements take full width and stack */
+    align-items: stretch;
     text-align: center;
     justify-content: center;
     gap: 15px;
@@ -316,9 +315,9 @@ body {
   }
   
   .small-block1 img {
-    width: 100%; /* Ensures the image stretches to the full width */
-    height: 100%; /* Ensures the image stretches to the full height */
-    object-fit: fill; /* Scales the image to fill the container, ignoring aspect ratio */
+    width: 100%; 
+    height: 100%; 
+    object-fit: fill; 
     border-radius: 15px;
 }
 
@@ -339,19 +338,17 @@ body {
 }
 
 
-/* Styling for the parent container to hold the blocks */
 .sliding-container {
   z-index: 10000;
-  display: grid; /* Using grid layout */
-  grid-template-columns: 1fr; /* 1 column grid */
-  gap: 10px; /* Space between blocks */
-  position: fixed; /* Fix it on the screen */
-  top: 20px; /* Starting top position */
-  right: 50px; /* Keep it on the right */
-  max-width: 600px; /* Max width of the grid */
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 10px; 
+  position: fixed; 
+  top: 20px;
+  right: 50px; 
+  max-width: 600px; 
 }
 
-/* General styling for the sliding block */
 .sliding-block {
   width: 100%;
   height: 100px;
@@ -361,18 +358,18 @@ body {
   gap: 5px;
   padding: 15px;
   border-radius: 15px;
-  transition: transform 1s ease-in-out; /* Smooth slide effect */
-  transform: translateX(100%); /* Start off-screen */
+  transition: transform 1s ease-in-out;
+  transform: translateX(100%); 
 }
 
 .sliding-block.show {
-  transform: translateX(0); /* Slide into view */
+  transform: translateX(0); 
 }
 
 .sliding-block img {
-  height: 100%; /* Ensures the image stretches to the full height */
+  height: 100%; 
   aspect-ratio: 1 / 1;
-  object-fit: fill; /* Scales the image to fill the container, ignoring aspect ratio */
+  object-fit: fill; 
   border-radius: 15px;
 }
 
@@ -384,7 +381,7 @@ body {
   background-color: var(--color0);
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* Ensures elements take full width and stack */
+  align-items: stretch;
   text-align: center;
   justify-content: center;
   gap: 15px;
